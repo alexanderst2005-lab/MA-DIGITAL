@@ -17,7 +17,7 @@ const PROJECTS_DATA = [
     shortDescription: "Experiencia web dinámica para restaurante de comida rápida, con catálogo interactivo de productos, carrito de compras y sistema de pedidos directo a WhatsApp.",
     fullDescription: "FURIA & FUEGO es una marca gastronómica joven y potente. Diseñamos una plataforma web interactiva y ultrarrápida que permite a los clientes explorar el menú de hamburguesas gourmet, bebidas y acompañamientos, personalizar sus pedidos y enviarlos directamente a la cocina vía WhatsApp sin intermediarios ni comisiones excesivas.",
     image: "assets/images/furia_fuego.png",
-    demoUrl: "https://furia-fuego.vercel.app", // URL de demostración / real
+    demoUrl: "https://furia-fuego.vercel.app",
     urlBarText: "furiayfuego.com",
     features: [
       "Menú interactivo categorizado",
@@ -31,6 +31,33 @@ const PROJECTS_DATA = [
       { label: "Carga Inicial", value: "0.4s" },
       { label: "Conversión Mobile", value: "+45%" },
       { label: "Experiencia", value: "100/100" }
+    ]
+  },
+  {
+    id: "lumira-beauty",
+    title: "LUMIRA LASHES & MAKEUP",
+    category: "belleza",
+    categoryLabel: "Belleza & Cosméticos",
+    type: "real",
+    typeLabel: "Cliente Real",
+    badgeClass: "badge-real",
+    shortDescription: "Tienda e-commerce de belleza, pestañas y maquillaje con envíos a todo el país, pago contra entrega y catálogo navegable por categorías.",
+    fullDescription: "LUMIRA es una tienda virtual especializada en productos de belleza, pestañas punto a punto, enteras, makeup, skincare, cuidado corporal y capilar. Diseñamos una experiencia web moderna, fresca y femenina con carrito de compras, barra de promociones con envíos a todo el país, opción de pago contra entrega y sistema de atención directa vía WhatsApp.",
+    image: "assets/images/lumira.png",
+    demoUrl: "https://lumira-beauuty.vercel.app/",
+    urlBarText: "lumira-beauuty.vercel.app",
+    features: [
+      "Barra de anuncios (Envíos a todo el país / Pago contra entrega)",
+      "Navegación por categorías (Pestañas, Makeup, Skincare, Corporal)",
+      "Catálogo de productos destacados con precios y botón de compra",
+      "Integración de pedidos directo a WhatsApp",
+      "Buscador rápido y lista de favoritos"
+    ],
+    technologies: ["HTML5 / JS Vanilla", "CSS Pink Theme", "Vercel Hosting", "WhatsApp E-Commerce"],
+    stats: [
+      { label: "Conversión", value: "+50%" },
+      { label: "Envíos", value: "Nacional" },
+      { label: "Uso Móvil", value: "100%" }
     ]
   },
   {
@@ -112,33 +139,6 @@ const PROJECTS_DATA = [
       { label: "Visuales", value: "Retina Ready" },
       { label: "Velocidad", value: "Ultrarrápida" },
       { label: "Diseño", value: "Minimalista" }
-    ]
-  },
-  {
-    id: "la-dulceria",
-    title: "LA DULCERÍA ARTESANAL",
-    category: "reposteria",
-    categoryLabel: "Repostería & Pastelería",
-    type: "demo",
-    typeLabel: "Proyecto Conceptual",
-    badgeClass: "badge-demo",
-    shortDescription: "Catálogo de postres, tortas personalizadas y repostería artesanal con módulo de encargos para eventos especiales.",
-    fullDescription: "Web tentadora y cálida creada para deleitar a los usuarios desde la pantalla. Incluye menú desplegable de sabores, cotizador de tortas personalizadas según el número de porciones y agenda de pedidos anticipados.",
-    image: "assets/images/bakery.png",
-    demoUrl: "#",
-    urlBarText: "ladulceria.madigital.app",
-    features: [
-      "Catálogo de tortas y postres con detalles",
-      "Formulario interactivo de encargos especiales",
-      "Galería fotográfica de eventos pasados",
-      "Atención personalizada vía WhatsApp",
-      "Diseño dulce y cercano al cliente"
-    ],
-    technologies: ["HTML5", "CSS3 Custom Theme", "Responsive UI"],
-    stats: [
-      { label: "Diseño", value: "Warm Theme" },
-      { label: "Cotizador", value: "Instant" },
-      { label: "Uso Móvil", value: "100%" }
     ]
   }
 ];
