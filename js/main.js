@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Configurar enlaces de WhatsApp
   const whatsappBtns = document.querySelectorAll('.js-whatsapp-link');
   whatsappBtns.forEach(btn => {
-    btn.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}?text=${DEFAULT_WA_MESSAGE}`);
+    const customMsg = btn.getAttribute('data-msg');
+    const msgToUse = customMsg ? encodeURIComponent(customMsg) : DEFAULT_WA_MESSAGE;
+    btn.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}?text=${msgToUse}`);
     btn.setAttribute('target', '_blank');
     btn.setAttribute('rel', 'noopener noreferrer');
   });

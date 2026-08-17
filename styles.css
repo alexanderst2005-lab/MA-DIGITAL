@@ -968,11 +968,114 @@ img {
   z-index: 1;
 }
 
-.cta-box .btn-whatsapp {
+/* 11.5 SECCIÓN DEMOS "TU NEGOCIO PODRÍA VERSE ASÍ" */
+.demo-showcase-section {
+  padding: 6rem 0;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 242, 254, 0.06) 0%, transparent 60%);
   position: relative;
-  z-index: 1;
-  font-size: 1.1rem;
-  padding: 1rem 2.5rem;
+}
+
+.demo-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.demo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-card), 0 0 30px rgba(0, 242, 254, 0.15);
+}
+
+.demo-card-badge {
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--accent-cyan);
+  border-bottom: 1px solid var(--border-light);
+  padding: 0.6rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.demo-card-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #000;
+}
+
+.demo-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.demo-card:hover .demo-card-image img {
+  transform: scale(1.06);
+}
+
+.demo-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.demo-card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.demo-card-content p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5), 0 0 25px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: waPulse 3s infinite;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.12);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.7);
+  color: #ffffff;
+}
+
+@keyframes waPulse {
+  0% { transform: scale(1); box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5); }
+  50% { transform: scale(1.06); box-shadow: 0 15px 35px rgba(37, 211, 102, 0.7); }
+  100% { transform: scale(1); box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5); }
 }
 
 /* 12. FOOTER */
