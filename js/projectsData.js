@@ -35,7 +35,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "lumira-beauty",
-    title: "LUMIRA LASHES & MAKEUP",
+    title: "LUMIRA BEAUTY",
     category: "belleza",
     categoryLabel: "Belleza & Cosméticos",
     type: "real",
