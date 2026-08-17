@@ -259,4 +259,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicializar renderizado de proyectos
   renderProjects('todos');
+
+  /* -------------------------------------------------------------------------- */
+  /* 6. CARRUSEL ROTATIVO DE PORTADA (HERO SLIDESHOW)                           */
+  /* -------------------------------------------------------------------------- */
+  const heroSlides = [
+    { img: 'assets/images/furia_fuego.png', url: 'furiayfuego.com' },
+    { img: 'assets/images/lumira.png', url: 'lumira-beauuty.vercel.app' },
+    { img: 'assets/images/ms_boutique.png', url: 'msboutiqueshop.shop' },
+    { img: 'assets/images/sneakers.png', url: 'sneakers-shop.madigital.app' },
+    { img: 'assets/images/pet_shop.png', url: 'petlovers-demo.madigital.app' }
+  ];
+
+  const heroImg = document.getElementById('hero-browser-img');
+  const heroUrl = document.getElementById('hero-browser-url');
+  const heroDotsContainer = document.getElementById('hero-slideshow-dots');
+
+  if (heroImg && heroUrl) {
+    let currentSlide = 0;
+
+    // Renderizar puntos indicadores
+    if (heroDotsContainer) {
+      heroDotsContainer.innerHTML = heroSlides.map((_, idx) => `
+        <span class="hero-dot ${idx === 0 ? 'active' : ''}" data-index="${idx}"></span>
+      `).join('');
+
+      heroDotsContainer.querySelectorAll('.hero-dot').forEach(dot => {
+        dot.addEventListener('click', (e) => {
+          const idx = parseInt(e.target.getAttribute('data-index'), 10);
+          goToSlide(idx);
+        });
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      heroImg.style.opacity = '0';
+      heroImg.style.transform = 'scale(0.97)';
+
+      setTimeout(() => {
+        heroImg.src = heroSlides[currentSlide].img;
+        heroUrl.textContent = heroSlides[currentSlide].url;
+        heroImg.style.opacity = '1';
+        heroImg.style.transform = 'scale(1)';
+
+        // Actualizar estados activos de los puntos
+        if (heroDotsContainer) {
+          heroDotsContainer.querySelectorAll('.hero-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === currentSlide);
+          });
+        }
+      }, 300);
+    }
+
+    // Rotación automática cada 3.5 segundos
+    setInterval(() => {
+      const nextIndex = (currentSlide + 1) % heroSlides.length;
+      goToSlide(nextIndex);
+    }, 3500);
+  }
 });
