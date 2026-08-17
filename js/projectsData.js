@@ -42,7 +42,7 @@ const PROJECTS_DATA = [
     typeLabel: "Cliente Real",
     badgeClass: "badge-real",
     shortDescription: "Tienda e-commerce de belleza, pestañas y maquillaje con envíos a todo el país, pago contra entrega y catálogo navegable por categorías.",
-    fullDescription: "LUMIRA es una tienda virtual especializada en productos de belleza, pestañas punto a punto, enteras, makeup, skincare, cuidado corporal y capilar. Diseñamos una experiencia web moderna, fresca y femenina con carrito de compras, barra de promociones con envíos a todo el país, opción de pago contra entrega y sistema de atención directa vía WhatsApp.",
+    fullDescription: "LUMIRA BEAUTY es una tienda virtual especializada en productos de belleza, pestañas punto a punto, enteras, makeup, skincare, cuidado corporal y capilar. Diseñamos una experiencia web moderna, fresca y femenina con carrito de compras, barra de promociones con envíos a todo el país, opción de pago contra entrega y sistema de atención directa vía WhatsApp.",
     image: "assets/images/lumira.png",
     demoUrl: "https://lumira-beauuty.vercel.app/",
     urlBarText: "lumira-beauuty.vercel.app",
@@ -58,6 +58,33 @@ const PROJECTS_DATA = [
       { label: "Conversión", value: "+50%" },
       { label: "Envíos", value: "Nacional" },
       { label: "Uso Móvil", value: "100%" }
+    ]
+  },
+  {
+    id: "ms-boutique",
+    title: "MS BOUTIQUE",
+    category: "moda",
+    categoryLabel: "Moda & Elegancia Exclusiva",
+    type: "real",
+    typeLabel: "Cliente Real",
+    badgeClass: "badge-real",
+    shortDescription: "Plataforma e-commerce exclusiva de alta moda para la marca MS by Marcela Segura, especializada en pijamas, bodys y accesorios de lujo.",
+    fullDescription: "MS BOUTIQUE es una marca de alta moda y elegancia exclusiva diseñada para resaltar la sofisticación. Desarrollamos una tienda virtual minimalista en tonos crema y oro con categorías para pijamas, bodys, accesorios y productos Purpure, con cobertura de envíos a todo Colombia, garantía de compra 100% segura y asesoría personalizada por WhatsApp.",
+    image: "assets/images/ms_boutique.png",
+    demoUrl: "https://msboutiqueshop.shop/",
+    urlBarText: "msboutiqueshop.shop",
+    features: [
+      "Diseño de lujo en tonos crema, oro y negro sofisticado",
+      "Categorización por colecciones (Pijamas, Bodys, Accesorios, Purpure)",
+      "Garantía de compra 100% segura y envíos a todo el país",
+      "Banner promocional animado en la cabecera",
+      "Asesoría directa y ventas asistidas por WhatsApp"
+    ],
+    technologies: ["HTML5 / JS Vanilla", "Luxury Cream & Gold Theme", "Custom Domain Hosting", "WhatsApp Sales Integration"],
+    stats: [
+      { label: "Estilo", value: "Alta Moda" },
+      { label: "Cobertura", value: "Todo Colombia" },
+      { label: "Satisfacción", value: "100%" }
     ]
   },
   {
@@ -112,33 +139,6 @@ const PROJECTS_DATA = [
       { label: "Estilo", value: "Dark Luxury" },
       { label: "Agendamiento", value: "3 Pasos" },
       { label: "Retención", value: "Alta" }
-    ]
-  },
-  {
-    id: "velvet-atelier",
-    title: "VELVET ATELIER",
-    category: "moda",
-    categoryLabel: "Tienda de Ropa & Boutique",
-    type: "demo",
-    typeLabel: "Proyecto Conceptual",
-    badgeClass: "badge-demo",
-    shortDescription: "Showroom digital minimalista para marca de moda urbana y boutique, enfocado en destacar el diseño de las prendas con alta calidad visual.",
-    fullDescription: "Una experiencia visual inmersiva donde las fotografías y el estilo minimalista son los protagonistas. Ideal para marcas emergentes de ropa que buscan transmitir sofisticación, exclusividad y facilidad de compra desde Instagram o redes sociales.",
-    image: "assets/images/fashion_store.png",
-    demoUrl: "#",
-    urlBarText: "velvet-atelier.madigital.app",
-    features: [
-      "Lookbook interactivo de colecciones",
-      "Guía de tallas y detalles del producto",
-      "Vista rápida de prendas (Quick View)",
-      "Conexión directa a Instagram Shopping",
-      "Transiciones suaves entre páginas"
-    ],
-    technologies: ["CSS Grid Layout", "JS Modal Gallery", "Micro-animations"],
-    stats: [
-      { label: "Visuales", value: "Retina Ready" },
-      { label: "Velocidad", value: "Ultrarrápida" },
-      { label: "Diseño", value: "Minimalista" }
     ]
   }
 ];
