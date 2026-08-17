@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MA DIGITAL — Estudio Creativo & Desarrollo Web Profesional</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Diseñamos páginas web modernas, rápidas y adaptadas a las necesidades de cada negocio. Portafolio profesional de sitios web, catálogos digitales y sistemas de pedidos." />
+  <meta name="keywords" content="desarrollo web, diseño web, paginas web profesionales, catalogo digital, sistemas de pedidos, agencia digital, MA DIGITAL" />
+  <meta name="author" content="MA DIGITAL" />
+
+  <!-- OpenGraph Meta Tags (Social Media) -->
+  <meta property="og:title" content="MA DIGITAL — Estudio Creativo & Desarrollo Web" />
+  <meta property="og:description" content="Creamos experiencias digitales de alto impacto para hacer crecer tu negocio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVBAR / HEADER
+       ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#inicio" class="brand-logo">
+        <img src="assets/images/logo.png" alt="MA DIGITAL Logo" />
+        <span class="text-gradient">MA DIGITAL</span>
+      </a>
+
+      <div class="brand-badge">
+        <span class="pulse-dot"></span>
+        <span>Disponible para proyectos</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#proceso" class="nav-link">Proceso</a>
+        <a href="#por-que" class="nav-link">Por qué MA DIGITAL</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary js-whatsapp-link">
+          <i class="fab fa-whatsapp"></i> Hablemos
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENÚ MÓVIL DESPLEGABLE -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#inicio" class="nav-link">Inicio</a>
+    <a href="#proyectos" class="nav-link">Proyectos</a>
+    <a href="#servicios" class="nav-link">Servicios</a>
+    <a href="#proceso" class="nav-link">Proceso</a>
+    <a href="#por-que" class="nav-link">Por qué MA DIGITAL</a>
+    <a href="#" class="btn btn-primary js-whatsapp-link" style="width: 100%;">
+      <i class="fab fa-whatsapp"></i> Hablemos por WhatsApp
+    </a>
+  </div>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-tag">
+          <i class="fas fa-sparkles"></i>
+          <span>Estudio Creativo & Desarrollo Web</span>
+        </div>
+        <h1>
+          Creamos experiencias digitales para <span class="accent-gradient">hacer crecer tu negocio.</span>
+        </h1>
+        <p>
+          Diseñamos páginas web modernas, rápidas y adaptadas a las necesidades de cada negocio.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn btn-primary">
+            <span>VER PROYECTOS</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="#" class="btn btn-secondary js-whatsapp-link">
+            <i class="fab fa-whatsapp"></i> HABLEMOS
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Floating badge 1 -->
+        <div class="floating-card floating-card-1">
+          <div class="icon-box-sm">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div>
+            <div style="color: var(--text-main);">100% Carga Rápida</div>
+            <div style="color: var(--accent-cyan); font-size: 0.75rem;">Optimizado para ventas</div>
+          </div>
+        </div>
+
+        <!-- Floating badge 2 -->
+        <div class="floating-card floating-card-2">
+          <div class="icon-box-sm">
+            <i class="fas fa-mobile-screen-button"></i>
+          </div>
+          <div>
+            <div style="color: var(--text-main);">100% Mobile Ready</div>
+            <div style="color: var(--accent-green); font-size: 0.75rem;">Navegación perfecta</div>
+          </div>
+        </div>
+
+        <!-- Browser Mockup -->
+        <div class="browser-window">
+          <div class="browser-bar">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+            <div class="browser-url">
+              <i class="fas fa-lock" style="color: var(--accent-cyan);"></i>
+              <span>madigital.app/portafolio</span>
+            </div>
+          </div>
+          <div class="browser-body">
+            <img src="assets/images/furia_fuego.png" alt="Showcase MA DIGITAL" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROYECTOS DESTACADOS
+       ========================================== -->
+  <section class="projects-section" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-layer-group"></i>
+          <span>Portafolio de Proyectos</span>
+        </div>
+        <h2 class="section-title">Nuestros Proyectos Destacados</h2>
+        <p class="section-subtitle">
+          Explora los sitios web y plataformas interactivas que hemos diseñado para diferentes sectores y clientes.
+        </p>
+      </div>
+
+      <!-- Pestañas de Filtro -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="restaurantes">Restaurantes</button>
+        <button class="filter-btn" data-filter="mascotas">Mascotas</button>
+        <button class="filter-btn" data-filter="barberia">Barbería</button>
+        <button class="filter-btn" data-filter="moda">Moda</button>
+        <button class="filter-btn" data-filter="reposteria">Repostería</button>
+      </div>
+
+      <!-- Grid de Proyectos -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Renderizado dinámicamente con JavaScript desde projectsData.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICIOS
+       ========================================== -->
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-cubes"></i>
+          <span>Servicios Digitales</span>
+        </div>
+        <h2 class="section-title">¿Qué podemos crear para tu negocio?</h2>
+        <p class="section-subtitle">
+          Ofrecemos soluciones web completas, adaptadas y enfocadas en hacer destacar tu marca.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Servicio 1 -->
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3 class="service-title">Diseño y Desarrollo Web</h3>
+          <p class="service-desc">
+            Páginas web a medida, atractivas, de alta conversión y estructuradas profesionalmente para transmitir confianza.
+          </p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h3 class="service-title">Catálogos Digitales</h3>
+          <p class="service-desc">
+            Muestra tus productos o servicios de forma organizada, estética e interactiva para tus clientes.
+          </p>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3 class="service-title">Sistemas de Pedidos</h3>
+          <p class="service-desc">
+            Recibe pedidos estructurados directo a tu WhatsApp o sistema interno sin pagar comisiones por transacción.
+          </p>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3 class="service-title">Paneles Administrativos</h3>
+          <p class="service-desc">
+            Gestión sencilla de contenido, actualización de precios, productos y consultas de manera intuitiva.
+          </p>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Diseño Responsive</h3>
+          <p class="service-desc">
+            Visualización y funcionamiento perfecto en celulares, tablets y computadores sin perder elegancia.
+          </p>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3 class="service-title">Optimización y Publicación</h3>
+          <p class="service-desc">
+            Carga ultrarrápida, SEO inicial para buscadores y configuración de hosting profesional en Vercel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROCESO DE TRABAJO
+       ========================================== -->
+  <section class="process-section" id="proceso">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-route"></i>
+          <span>Metodología</span>
+        </div>
+        <h2 class="section-title">Nuestro Proceso de Trabajo</h2>
+        <p class="section-subtitle">
+          Un camino sencillo y transparente para transformar la presencia digital de tu negocio.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <!-- Paso 1 -->
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <h3>Hablamos</h3>
+          <p>Entendemos las necesidades, objetivos y visión de tu negocio para trazar la mejor estrategia web.</p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <h3>Diseñamos</h3>
+          <p>Creamos una propuesta visual personalizada acorde a la identidad y estética de tu marca.</p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <h3>Desarrollamos</h3>
+          <p>Convertimos la propuesta en una página web rápida, interactiva y totalmente funcional.</p>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="process-card">
+          <div class="process-number">04</div>
+          <h3>Publicamos</h3>
+          <p>Ponemos tu página en línea en su dominio definitivo para que tus clientes puedan encontrarla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       POR QUÉ MA DIGITAL
+       ========================================== -->
+  <section class="why-section" id="por-que">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fas fa-award"></i>
+          <span>Diferenciadores</span>
+        </div>
+        <h2 class="section-title">¿Por qué elegir MA DIGITAL?</h2>
+        <p class="section-subtitle">
+          Nos enfocamos en ofrecer calidad técnica, atención cercana y resultados reales.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Beneficio 1 -->
+        <div class="why-card">
+          <div class="why-icon-box"><i class="fas fa-paint-brush"></i></div>
+          <div>
+            <h4>Diseño Personalizado</h4>
+            <p>Sin plantillas aburridas. Cada detalle se crea desde cero ajustado a tu marca.</p>
+          </div>
+        </div>
+
+        <!-- Beneficio 2 -->
+        <div class="why-card">
+          <div class="why-icon-box"><i class="fas fa-mobile"></i></div>
+          <div>
+            <h4>Adaptado a Celulares</h4>
+            <p>Garantizamos una experiencia fluida y ágil en smartphones y pantallas móviles.</p>
+          </div>
+        </div>
+
+        <!-- Beneficio 3 -->
+        <div class="why-card">
+          <div class="why-icon-box"><i class="fas fa-tachometer-alt"></i></div>
+          <div>
+            <h4>Velocidad Ultrarrápida</h4>
+            <p>Código limpio y optimizado para cargar en menos de 1 segundo.</p>
+          </div>
+        </div>
+
+        <!-- Beneficio 4 -->
+        <div class="why-card">
+          <div class="why-icon-box"><i class="fas fa-bullseye"></i></div>
+          <div>
+            <h4>Soluciones a Medida</h4>
+            <p>Estructuras pensadas para que tus clientes encuentren lo que buscan sin complicaciones.</p>
+          </div>
+        </div>
+
+        <!-- Beneficio 5 -->
+        <div class="why-card">
+          <div class="why-icon-box"><i class="fas fa-handshake"></i></div>
+          <div>
+            <h4>Acompañamiento Continuo</h4>
+            <p>Te guiamos durante todo el proceso y te asesoramos para mantener tu página al día.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LLAMADO A LA ACCIÓN (CTA)
+       ========================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>¿LISTO PARA LLEVAR TU NEGOCIO A INTERNET?</h2>
+        <p>Cuéntanos qué necesitas y creemos juntos una solución moderna y efectiva para tu negocio.</p>
+        <a href="#" class="btn btn-whatsapp js-whatsapp-link">
+          <i class="fab fa-whatsapp"></i> HABLEMOS POR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="brand-logo">
+            <img src="assets/images/logo.png" alt="MA DIGITAL Logo" />
+            <span class="text-gradient">MA DIGITAL</span>
+          </a>
+          <p>Diseñamos experiencias digitales profesionales para hacer crecer tu negocio en internet.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navegación</h4>
+          <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proceso">Proceso</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Especialidades</h4>
+          <div class="footer-links">
+            <a href="#servicios">Desarrollo Web</a>
+            <a href="#servicios">Catálogos Digitales</a>
+            <a href="#servicios">Sistemas de Pedidos</a>
+            <a href="#servicios">UX/UI Design</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contacto</h4>
+          <div class="footer-links">
+            <a href="#" class="js-whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp Directo</a>
+            <a href="#proyectos"><i class="fas fa-briefcase"></i> Portafolio Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 MA DIGITAL. Todos los derechos reservados.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#inicio" style="color: var(--text-dim);">Términos</a>
+          <a href="#inicio" style="color: var(--text-dim);">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODAL DE DETALLE DE PROYECTO
+       ========================================== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Contenido dinámico inyectado por main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/projectsData.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
