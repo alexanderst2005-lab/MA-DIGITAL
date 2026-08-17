@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Configuración de WhatsApp
-  const WHATSAPP_NUMBER = "573000000000"; // Reemplazar posteriormente por número real
+  const WHATSAPP_NUMBER = "573027642208";
   const DEFAULT_WA_MESSAGE = encodeURIComponent("¡Hola MA DIGITAL! Vengo desde su página web y me gustaría cotizar un proyecto para mi negocio.");
 
   // Referencias DOM

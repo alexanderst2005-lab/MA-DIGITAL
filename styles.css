@@ -223,10 +223,17 @@ img {
 }
 
 .brand-logo img {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-sm);
-  filter: drop-shadow(0 0 6px var(--accent-cyan));
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.4));
+  transition: var(--transition);
+}
+
+.brand-logo:hover img {
+  transform: scale(1.08) rotate(5deg);
+  filter: drop-shadow(0 0 12px var(--accent-cyan));
 }
 
 .brand-badge {
