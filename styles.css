@@ -1031,15 +1031,24 @@ img {
   gap: 1rem;
 }
 
-/* 13. RESPONSIVE MEDIA QUERIES */
+/* ==========================================================================
+   13. RESPONSIVE MEDIA QUERIES (OPTIMIZADO PARA MÓVILES Y TABLETS)
+   ========================================================================== */
+
+/* Tablets & Pantallas Medianas (1024px o menos) */
 @media (max-width: 1024px) {
+  .hero {
+    padding: 9rem 0 4.5rem;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 2.5rem;
   }
 
   .hero-content p {
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 2rem;
   }
 
   .hero-buttons {
@@ -1048,60 +1057,388 @@ img {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Smartphones y Tablets Pequeñas (768px o menos) */
 @media (max-width: 768px) {
+  /* Contenedores y secciones con respiración */
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+
+  /* Navbar móvil limpia */
+  .navbar {
+    padding: 0.8rem 0;
+  }
+
   .nav-links, .nav-actions {
     display: none;
   }
 
+  .brand-logo {
+    font-size: 1.15rem;
+  }
+
+  .brand-logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-badge {
+    display: none; /* Ocultar badge en la barra superior para no apeñuzcar el logo */
+  }
+
   .menu-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-light);
   }
 
   .mobile-menu {
     position: fixed;
-    top: 70px;
+    top: 62px;
     left: 0;
     width: 100%;
     background: rgba(7, 9, 14, 0.98);
-    backdrop-filter: blur(20px);
-    padding: 2rem 1.5rem;
-    border-bottom: 1px solid var(--border-light);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 1.75rem 1.5rem;
+    border-bottom: 1px solid var(--border-glow);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     transform: translateY(-150%);
-    transition: transform 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 999;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   }
 
   .mobile-menu.active {
     transform: translateY(0);
   }
 
-  .hero-content h1 {
-    font-size: 2.5rem;
+  /* Hero en Móvil */
+  .hero {
+    padding: 6.5rem 0 3.5rem;
   }
 
-  .section-title {
-    font-size: 2rem;
+  .hero-content h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1.02rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+  }
+
+  /* Ocultar tarjetas flotantes que tapan la pantalla en móvil */
+  .floating-card {
+    display: none;
+  }
+
+  .browser-window {
+    border-radius: var(--radius-md);
+  }
+
+  .browser-bar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .browser-url {
+    font-size: 0.7rem;
+  }
+
+  /* Filtros de Proyectos con Scroll Horizontal fluido en Móvil */
+  .filter-tabs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.4rem 0.25rem 0.8rem;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.82rem;
+  }
+
+  /* Grid de Proyectos en Móvil */
+  .projects-section {
+    padding: 3.5rem 0;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .project-card {
+    border-radius: var(--radius-md);
+  }
+
+  .project-info {
+    padding: 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-desc {
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card-btn {
+    padding: 0.7rem;
+    font-size: 0.88rem;
+  }
+
+  /* Modal de Proyecto en Celular */
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .modal-container {
+    max-height: 92vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-close {
+    top: 0.85rem;
+    right: 0.85rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .modal-header-info h2 {
+    font-size: 1.45rem !important;
+  }
+
+  .modal-header-info p {
+    font-size: 0.92rem !important;
+  }
+
+  .modal-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-stat-card {
+    padding: 0.65rem 0.25rem;
+  }
+
+  .modal-stat-value {
+    font-size: 1.15rem;
+  }
+
+  .modal-stat-label {
+    font-size: 0.68rem;
+  }
+
+  .modal-features-list {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .modal-feature-item {
+    padding: 0.6rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  /* Servicios en Móvil */
+  .services-section {
+    padding: 3.5rem 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .service-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: var(--radius-md);
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-desc {
+    font-size: 0.9rem;
+  }
+
+  /* Proceso de Trabajo en Móvil */
+  .process-section {
+    padding: 3.5rem 0;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .process-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius-md);
+  }
+
+  .process-number {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .process-card h3 {
+    font-size: 1.15rem;
+  }
+
+  /* Por Qué MA DIGITAL en Móvil */
+  .why-section {
+    padding: 3.5rem 0;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .why-card {
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    gap: 1rem;
+  }
+
+  .why-icon-box {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .why-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .why-card p {
+    font-size: 0.85rem;
+  }
+
+  /* CTA en Móvil */
+  .cta-section {
+    padding: 3.5rem 0;
+  }
+
+  .cta-box {
+    padding: 2.75rem 1.25rem;
+    border-radius: var(--radius-md);
   }
 
   .cta-box h2 {
-    font-size: 2rem;
+    font-size: 1.65rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .cta-box p {
+    font-size: 0.98rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .cta-box .btn-whatsapp {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    font-size: 0.98rem;
+  }
+
+  /* Footer en Móvil */
+  .footer {
+    padding: 3rem 0 1.5rem;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 2.5rem;
   }
 
-  .floating-card-1 { top: -10px; left: 0; }
-  .floating-card-2 { bottom: -10px; right: 0; }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
 }
+
+/* Pantallas Extra Pequeñas (360px o menos) */
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.85rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
